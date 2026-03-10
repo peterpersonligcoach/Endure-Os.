@@ -1376,6 +1376,7 @@ function switchPanel(name){
 // BIBLE PANEL (world document)
 // ============================================================
 function renderBiblePanel(){
+  console.log("click renderBiblePanel");
   const ta=document.getElementById('world-textarea');
   if(ta&&ta.value!==S.world.document)ta.value=S.world.document;
   updateWorldWordcount();
@@ -1388,6 +1389,7 @@ function saveWorld(){const ta=document.getElementById('world-textarea');if(ta)mu
 // CHARACTER BIBLE PANEL
 // ============================================================
 function renderCharacterBiblePanel(){
+  console.log("renderCharacterBiblePanel");
   // Render nav list
   const nav=document.getElementById('bible-nav-list');
   if(!nav)return;
