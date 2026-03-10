@@ -1415,10 +1415,7 @@ function renderCharacterBiblePanel(){
     return;
   }
   const char=CHARACTER_BIBLE.characters.find(c=>c.id===RT.activeBibleCharId);
-  if(char){
-   // renderBibleCharContent(char,content);
-           return;
-  }
+  if(char){ renderBibleCharContent(char,content) return;}
   // System sections
   if(RT.activeBibleCharId==='conflicts'){renderConflictAxes(content);return;}
   if(RT.activeBibleCharId==='scenepriority'){renderScenePriority(content);return;}
